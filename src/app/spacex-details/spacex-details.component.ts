@@ -25,5 +25,7 @@ export class SpacexDetailsComponent implements OnInit {
     })
 
   }
-
+  trackByFlightNo(index: number, card: any) {
+    return card.flight_number;
+  }
 }

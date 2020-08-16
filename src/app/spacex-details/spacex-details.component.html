@@ -1,6 +1,6 @@
 <div class="col-9 col-s-12 col-m-8">
     <div class="grid-container">
-        <div *ngFor="let card of filterData" class="grid-item">
+        <div *ngFor="let card of filterData ;trackBy:trackByFlightNo" class="grid-item">
             <div class="card">
                 <img class="img" alt="Mission Image" src="{{card.links.mission_patch_small}}" />
                 <div class="container">

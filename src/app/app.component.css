@@ -9,3 +9,11 @@ footer{
     font-size:large;
     font-weight: bold;
 }
+@media only screen and (min-width:1440px) {
+    h1{
+        font-family:sans-serif;
+        margin-bottom:0px;
+        font-weight: bolder;
+        text-align:center
+    }
+}

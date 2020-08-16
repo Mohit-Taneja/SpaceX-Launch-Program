@@ -6,7 +6,7 @@
             <hr>
             <div class="grid-container">
                 <div *ngFor="let i of list_of_yrs" class="grid-item">
-                    <button id="btn_launchYr" type="button"  tabindex="0"  [ngClass]="launchYearData === i && launchYrFlag?'active':'btn-filter'"
+                    <button id="btn_launchYr" type="button" tabindex="0" [ngClass]="launchYearData === i?'active':'btn-filter'"
                         (click)="selectedVal(i,'year')" (keypress)="selectedVal(i,'year')">{{i}}</button>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                 <hr>
                 <div class="grid-container">
                     <div *ngFor="let i of launch_landList" class="grid-item">
-                        <button id="launchBtn" type="button"   tabindex="0"  [ngClass]="launchSuccess === i.val && launchFlag ?'active':'btn-filter'"
+                        <button id="launchBtn" type="button" tabindex="0" [ngClass]="launchSuccessData === i.val ?'active':'btn-filter'"
                             (click)="selectedVal(i.val,'launch')" (keypress)="selectedVal(i,'launch')">{{i.id}}</button>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
             <hr>
             <div class="grid-container">
                 <div *ngFor="let i of launch_landList" class="grid-item">
-                    <button id="landBtn" type="button" tabindex="0" [ngClass]="landSuccess === i.val && landFlag?'active':'btn-filter' "
+                    <button id="landBtn" type="button" tabindex="0" [ngClass]="landSuccessData === i.val ?'active':'btn-filter' "
                         (click)="selectedVal(i.val,'land')" (keypress)="selectedVal(i,'land')">{{i.id}}</button>
                 </div>
             </div>
