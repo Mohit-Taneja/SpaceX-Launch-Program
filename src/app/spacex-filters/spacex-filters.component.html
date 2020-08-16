@@ -1,0 +1,37 @@
+<div class="col-3 col-s-12 col-m-4">
+    <div class="card">
+        <h2><b>Filters</b></h2>
+        <div>
+            <label>Launch Year</label>
+            <hr>
+            <div class="grid-container">
+                <div *ngFor="let i of list_of_yrs" class="grid-item">
+                    <button id="btn_launchYr" type="button"  tabindex="0"  [ngClass]="launchYearData === i && launchYrFlag?'active':'btn-filter'"
+                        (click)="selectedVal(i,'year')" (keypress)="selectedVal(i,'year')">{{i}}</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label>Successful <wbr>Launch</label>
+                <hr>
+                <div class="grid-container">
+                    <div *ngFor="let i of launch_landList" class="grid-item">
+                        <button id="launchBtn" type="button"   tabindex="0"  [ngClass]="launchSuccess === i.val && launchFlag ?'active':'btn-filter'"
+                            (click)="selectedVal(i.val,'launch')" (keypress)="selectedVal(i,'launch')">{{i.id}}</button>
+                    </div>
+                </div>
+        </div>
+        <br>
+        <div>
+            <label>Successful Landing</label>
+            <hr>
+            <div class="grid-container">
+                <div *ngFor="let i of launch_landList" class="grid-item">
+                    <button id="landBtn" type="button" tabindex="0" [ngClass]="landSuccess === i.val && landFlag?'active':'btn-filter' "
+                        (click)="selectedVal(i.val,'land')" (keypress)="selectedVal(i,'land')">{{i.id}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
