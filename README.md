@@ -1,27 +1,16 @@
-# Spacex
+#Set up Instruction:-
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+1. Install `node.js` from node.org**.
+2. Run `npm install -g @angular/cli` in terminal window to install angular cli**. 
+3. Import project in IDE(Visual Studio Code).
+4. Run `npm install` command to install node package module(npm).
+5. Run `npm run build:ssr` to build the project for Server Side Rendering*. 
+6. Run `Run npm run serve:ssr` to serve the application.
+7. After succesfully run the application,navigate to `localhost:4000/`
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+** If Node.js and Angular CLI have already installed in your local,skip this steps.
+*If you have dist folder in your project,Please skip this step.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
